@@ -36,7 +36,7 @@ const unsigned char ascii_to_scan_code_table[] PROGMEM = {
   0x2c,          //  ' ' (space)
   0x1e|SHIFT,    // !
   0x1f|SHIFT,    // "
-  0x20|ALTGR,    // #
+  0x20|SHIFT,    // #
   0x21|SHIFT,    // $
   0x22|SHIFT,    // %
   0x23|SHIFT,    // &
@@ -61,11 +61,11 @@ const unsigned char ascii_to_scan_code_table[] PROGMEM = {
   0x26,          // 9
   0x37|SHIFT,      // :
   0x36|SHIFT,      // ;
-  0x03,            // < //KEY_NON_US_100
+  0x64|SHIFT,            // < //KEY_NON_US_100
   0x27|SHIFT,      // =
-  0x03|SHIFT,      // > //KEY_NON_US_100 + SHIFT
+  0x64,      // > //KEY_NON_US_100 + SHIFT
   0x2d|SHIFT,      // ?
-  0x1f|ALTGR,      // @
+  0x14|ALTGR,      // @
   0x04|SHIFT,      // A
   0x05|SHIFT,      // B
   0x06|SHIFT,      // C
@@ -92,12 +92,12 @@ const unsigned char ascii_to_scan_code_table[] PROGMEM = {
   0x1b|SHIFT,      // X
   0x1c|SHIFT,      // Y
   0x1d|SHIFT,      // Z
-  0x2f|ALTGR,      // [
-  0x35|ALTGR,      // bslash
-  0x30|ALTGR,      // ]
-  0x2f|SHIFT,    // ^
+  0x34|SHIFT,      // [
+  0x35|ALTGR,      // bslash 
+  0x32|SHIFT,      // ]
+  0x34|ALTGR,    // ^
   0x38|SHIFT,    // _
-  0x2f, 	 // `
+  0x32|ALTGR,    // `
   0x04,          // a
   0x05,          // b
   0x06,          // c
@@ -124,9 +124,9 @@ const unsigned char ascii_to_scan_code_table[] PROGMEM = {
   0x1b,          // x
   0x1c,          // y
   0x1d,          // z
-  0x34|ALTGR,    // {
+  0x34,          // {
   0x1e|ALTGR,    // |
-  0x32|ALTGR,    // }
-  0x21|ALTGR,    // ~
+  0x32,          // }
+  0x30|ALTGR,    // ~
   0x00,        // DEL
 };

@@ -1,6 +1,8 @@
 DigisparkKeyboard library with multiple layout support
 ======================================================
- 
+
+This fork add support Latin American keyboard layout
+
 Based on DigisparkKeyboard library
 
 This library allows an Digispark board with Attiny85 act as a Keyboard.
@@ -9,7 +11,7 @@ For more information about this boards visit http://digistump.com/category/1
 
 Modified by Ernesto Sanchez to support multiple keyboard layouts
 
-Modified by Mümin Köykıran to support Turkish keyboard layouts 
+Modified by Mümin Köykıran to support Turkish keyboard layouts
 
 Supported layouts:
 * tr_tr
@@ -19,6 +21,7 @@ Supported layouts:
 * de_de
 * en_us (default)
 * es_es
+* es_la (Latin American)
 * fi_fi
 * fr_fr
 * it_it
@@ -31,15 +34,15 @@ Download and installation
 =========================
 - Click "Clone or download" -> "Download ZIP"
 - Unzip downloaded file in Arduino/libraries/ directory
-- Maybe you need to use this directory (C:\Users\Mümin Köykıran\AppData\Local\Arduino15\packages\digistump\hardware\avr\1.6.7\libraries\) in your PC
+- Maybe you need to use this directory (~/.arduino15/packages/digistump/hardware/avr/1.6.7/libraries/) in your PC
 
 Use
 ===
 To configure the keyboard layout it just add #define kbd_lang after #include "DigiKeyboard.h"
 
-Example:
+Example for use Latin American layout:
 ```
-#define kbd_tr_tr
+#define kbd_es_la
 #include "DigiKeyboard.h"
 ```
 
@@ -51,6 +54,7 @@ You can use:
 * kbd_de_de
 * kbd_en_us
 * kbd_es_es
+* kbd_es_la
 * kbd_fi_fi
 * kbd_fr_fr
 * kbd_it_it
